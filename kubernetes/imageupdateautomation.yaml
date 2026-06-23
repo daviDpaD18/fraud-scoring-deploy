@@ -16,9 +16,7 @@ spec:
       author:
         name: flux-bot
         email: flux@bot.com
-      messageTemplate: "chore: update fraud-scoring image to {{range .Updated.Images}}{{.}}{{end}}"
-      push:
-        branch: main
+      messageTemplate: "chore: update fraud-scoring image"
   update:
     strategy: Setters
     path: ./kubernetes
