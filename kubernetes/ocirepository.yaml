@@ -1,4 +1,4 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta1
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
   name: ml-charts
@@ -7,4 +7,4 @@ spec:
   interval: 5m
   url: oci://ghcr.io/davidpad18/charts/ml-service
   ref:
-    tag: 0.1.0
+    tag: "0.1.0"
