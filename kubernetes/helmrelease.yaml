@@ -12,4 +12,4 @@ spec:
   values:
     image:
       repository: ghcr.io/davidpad18/fraud-scoring
-      tag: latest # {"$imagepolicy": "flux-system:fraud-scoring:tag"}
+      tag: main-8f13d0f501e757d54f7bd44f088d2254d9a4482a # {"$imagepolicy": "flux-system:fraud-scoring:tag"}
