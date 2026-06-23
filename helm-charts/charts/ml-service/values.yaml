@@ -1,0 +1,13 @@
+image:
+  repository: ghcr.io/davidpad18/fraud-scoring
+  tag: latest
+replicaCount: 1
+service:
+  port: 8080
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "100m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
