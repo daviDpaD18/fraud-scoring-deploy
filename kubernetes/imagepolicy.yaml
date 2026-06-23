@@ -1,0 +1,14 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: fraud-scoring
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: fraud-scoring
+  filterTags:
+    pattern: "^main-(?P<ts>.*)$"
+    extract: "$ts"
+  policy:
+    alphabetical:
+      order: asc

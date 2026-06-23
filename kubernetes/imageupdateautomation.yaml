@@ -1,0 +1,24 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageUpdateAutomation
+metadata:
+  name: fraud-scoring
+  namespace: flux-system
+spec:
+  interval: 5m
+  sourceRef:
+    kind: GitRepository
+    name: fraud-scoring
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        name: flux-bot
+        email: flux@bot.com
+      messageTemplate: "chore: update fraud-scoring image to {{range .Updated.Images}}{{.}}{{end}}"
+      push:
+        branch: main
+  update:
+    strategy: Setters
+    path: ./kubernetes

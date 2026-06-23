@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
   - ocirepository.yaml
   - helmrelease.yaml
+  - imagerepository.yaml
+  - imagepolicy.yaml
+  - imageupdateautomation.yaml
