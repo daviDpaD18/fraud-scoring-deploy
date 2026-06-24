@@ -7,4 +7,3 @@ resources:
   - imagepolicy.yaml
   - imageupdateautomation.yaml
   - mlflow-secret.enc.yaml
-  - servicemonitor.yaml
