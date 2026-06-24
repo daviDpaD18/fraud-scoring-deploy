@@ -7,4 +7,4 @@ spec:
   interval: 5m
   url: oci://ghcr.io/davidpad18/charts/ml-service
   ref:
-    tag: "0.1.0"
+    tag: "0.2.0"

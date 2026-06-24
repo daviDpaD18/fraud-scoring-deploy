@@ -13,3 +13,6 @@ spec:
     image:
       repository: ghcr.io/davidpad18/fraud-scoring
       tag: main-e551e9fc874e847968e30ef2c67b36dc6f9b28de # {"$imagepolicy": "flux-system:fraud-scoring:tag"}
+    service:
+      port: 8080
+      name: http-metrics

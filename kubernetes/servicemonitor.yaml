@@ -13,6 +13,6 @@ spec:
     matchLabels:
       helm.toolkit.fluxcd.io/name: fraud-scoring
   endpoints:
-    - targetPort: 8080
+    - targetPort: http-metrics
       path: /metrics
       interval: 15s
