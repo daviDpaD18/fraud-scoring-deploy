@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: fraud-scoring
+  namespace: monitoring
+  labels:
+    release: kube-prometheus-stack
+spec:
+  namespaceSelector:
+    matchNames:
+      - fraud-scoring
+  selector:
+    matchLabels:
+      app: fraud-scoring
+  endpoints:
+    - port: "8080"
+      path: /metrics
+      interval: 15s
